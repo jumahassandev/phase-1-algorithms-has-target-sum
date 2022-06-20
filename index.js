@@ -1,13 +1,39 @@
-function hasTargetSum(array, target) {
-  // Write your algorithm here
+function hasTargetSum(array, target) 
+{
+  for (let i = 0; i < array.length; i++) {
+const firstNumber= target - array[i];
+
+    for (let j = i + 1; j < array.length; j++) 
+    {   
+      if (array[j] === firstNumber) {
+        return true}
+
+        
+       // else{ return false}
+    }
+
+  }
+  return false
 }
+
 
 /* 
   Write the Big O time complexity of your function here
+  make a function called hastargetsum using function keywords ,
+  check among the the arrays if their sum of two numbers adds upto to the given target sum 
+  if it adds up ,the fuctiio returns true and if not it return a false as
+  the result
 */
 
 /* 
   Add your pseudocode here
+  function hastarget 
+  pass arrugment array and target
+  iterate over the given arrays of numbers 
+  check if the complimentary numbers of the target result add up 
+  correctly 
+  return true 
+  return false if not .
 */
 
 /*
